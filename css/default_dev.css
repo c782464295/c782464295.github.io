@@ -115,11 +115,6 @@ body {
 }
 
 
-
-html{
-	background:pink;
-    height: 100%;	
-}
 /*最外层容器样式*/
 .wrap{
 	width: 10px;
@@ -131,8 +126,8 @@ html{
 }
 /*包裹所有容器样式*/
 .cube{
-	width:600px;
-	height:400px;
+	width:300px;
+	height:200px;
 	margin: 0 auto;
 	transform-style: preserve-3d;
 	transform: rotateX(-30deg) rotateY(-80deg);
