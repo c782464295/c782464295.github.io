@@ -10,7 +10,9 @@
 			src: url('digital-7_mono.ttf') format("truetype");
 		}
 	</style>
-	<audio hidden autoplay="true" preload="auto" src="./596dc7fc2e5bb34733f9869782a0fd7c.mp3"></audio>
+	<audio hidden autoplay="true" preload="auto" id="bgMusic"
+		src="596dc7fc2e5bb34733f9869782a0fd7c.mp3"></audio>
+
 	<link href="css/default_dev.css" type="text/css" rel="stylesheet">
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/garden.js"></script>
@@ -24,7 +26,7 @@
 	<div id="content">
 
 		<div id="code">
-			
+
 		</div>
 		<div id="loveHeart">
 			<canvas id="garden"></canvas>
@@ -124,6 +126,14 @@
 			adjustCodePosition();
 			$("#code").typewriter();
 		}
+
+
+		var music = document.getElementById("bgMusic");
+		$("documemt").ready(function () {
+			
+			music.play();
+
+		});
 	</script>
 
 </body>
